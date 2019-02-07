@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/androidbg"
+    android:scaleType = "centerCrop">
+
+
+    <Button
+        android:id="@+id/locate"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Show Messages on Map"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/sendsmsbutton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/locate"
+        android:layout_below="@+id/locate"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Send Sms"
+        android:textColor="@color/cardview_light_background" />
+
+    <Button
+        android:id="@+id/categorybutton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/sendsmsbutton"
+        android:layout_below="@+id/sendsmsbutton"
+        android:background="@android:color/holo_red_light"
+        android:padding="10dp"
+        android:text="categorized messages"
+        android:textColor="@color/cardview_light_background" />
+
+    <Button
+        android:id="@+id/blacklistbutton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/categorybutton"
+        android:layout_below="@+id/categorybutton"
+        android:background="#117"
+        android:text="Blacklist"
+        android:textColor="@color/cardview_light_background" />
+
+
+
+</RelativeLayout>

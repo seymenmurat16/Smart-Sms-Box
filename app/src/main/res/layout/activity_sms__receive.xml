@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.murat.smartsmsbox.SMS_Receive">
+
+    <!--Todo : MainActivity.xml-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="SMS Receiver"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/rounded_fg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Message From : "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mesaj"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/from"
+        android:layout_below="@+id/from"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/rounded_fg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Message :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/btn_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mesaj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Home" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@android:color/holo_green_dark" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="NEW MESSAGE !"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/from"
+        android:layout_below="@+id/textView"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="11dp"
+        android:text="Message From:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/from"
+        android:layout_below="@+id/from"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="13dp"
+        android:text="Message :"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

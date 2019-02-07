@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.murat.smartsmsbox.BlacklistActivity"
+    android:background="@drawable/gray">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addphone"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:text="BLACKLIST"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:background="#000" />
+
+    <Button
+        android:id="@+id/addphone"
+        android:layout_marginBottom="20dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="0dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:text="Add Phone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/blacklist_recylerview"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
